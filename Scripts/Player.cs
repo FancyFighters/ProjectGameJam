@@ -4,6 +4,8 @@ using System.Collections;
 [RequireComponent (typeof (Controller2D))]
 public class Player : MonoBehaviour {
 
+	public bool Player1;
+
 	public float jumpHeight = 4;
 	public float timeToJumpApex = .4f;
 	float accelerationTimeAirborne = .2f;
@@ -26,20 +28,37 @@ public class Player : MonoBehaviour {
 	}
 
 	void Update () {
-		if(controller.collisions.above || controller.collisions.below) {
-			velocity.y = 0;
+		if(Player1) {
+			if(controller.collisions.above || controller.collisions.below) {
+				velocity.y = 0;
+			}
+
+			Vector2 input = new Vector2 (Input.GetAxisRaw("Player 1 Horizontal"), Input.GetAxisRaw("Player 1 Vertical"));
+
+			if(Input.GetKeyDown(KeyCode.UpArrow) && controller.collisions.below) {
+				velocity.y = jumpVelocity;
+			}
+
+			float targetVelocityX = input.x * moveSpeed;
+			velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below)?accelerationTimeGrounded:accelerationTimeAirborne);
+			velocity.y += gravity * Time.deltaTime;
+			controller.Move(velocity * Time.deltaTime);
+		} else {
+			if(controller.collisions.above || controller.collisions.below) {
+				velocity.y = 0;
+			}
+			
+			Vector2 input = new Vector2 (Input.GetAxisRaw("Player 2 Horizontal"), Input.GetAxisRaw("Player 2 Vertical"));
+			
+			if(Input.GetKeyDown(KeyCode.W) && controller.collisions.below) {
+				velocity.y = jumpVelocity;
+			}
+			
+			float targetVelocityX = input.x * moveSpeed;
+			velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below)?accelerationTimeGrounded:accelerationTimeAirborne);
+			velocity.y += gravity * Time.deltaTime;
+			controller.Move(velocity * Time.deltaTime);
 		}
-
-		Vector2 input = new Vector2 (Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-
-		if(Input.GetKeyDown(KeyCode.Space) && controller.collisions.below) {
-			velocity.y = jumpVelocity;
-		}
-
-		float targetVelocityX = input.x * moveSpeed;
-		velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below)?accelerationTimeGrounded:accelerationTimeAirborne);
-		velocity.y += gravity * Time.deltaTime;
-		controller.Move(velocity * Time.deltaTime);
 
 	}
 }

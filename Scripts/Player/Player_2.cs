@@ -2,9 +2,7 @@
 using System.Collections;
 
 [RequireComponent (typeof (Controller2D))]
-public class Player : MonoBehaviour {
-
-	public bool Player1;
+public class Player_2 : MonoBehaviour {
 
 	public float jumpHeight = 4;
 	public float timeToJumpApex = .4f;
@@ -37,21 +35,15 @@ public class Player : MonoBehaviour {
 	}
 
 	void Movement() {
-		anim.SetFloat("speed", Mathf.Abs(Input.GetAxis("Horizontal")));
+		anim.SetFloat("speed", Mathf.Abs(Input.GetAxis("Player 2 Horizontal")));
 
-		Vector2 input;
-		
 		if(controller.collisions.above || controller.collisions.below) {
 			velocity.y = 0;
 		}
-		
-		if(Player1) {
-			input = new Vector2 (Input.GetAxisRaw("Player 1 Horizontal"), Input.GetAxisRaw("Player 1 Vertical"));		
-		} else {
-			input = new Vector2 (Input.GetAxisRaw("Player 2 Horizontal"), Input.GetAxisRaw("Player 2 Vertical"));
-		}
 
-		if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) && controller.collisions.below) {
+		Vector2	input = new Vector2 (Input.GetAxisRaw("Player 2 Horizontal"), Input.GetAxisRaw("Player 2 Vertical"));
+
+		if(Input.GetKeyDown(KeyCode.W) && controller.collisions.below) {
 			velocity.y = jumpVelocity;
 			jumpTime = timeToJumpApex;
 			anim.SetTrigger("Jump");
@@ -64,11 +56,11 @@ public class Player : MonoBehaviour {
 			jumped = false;
 		}
 
-		if(Input.GetAxisRaw("Horizontal") > 0) {
+		if(Input.GetAxisRaw("Player 2 Horizontal") > 0) {
 			transform.localScale = new Vector3(1, 1, 1);
 		}
 		
-		if(Input.GetAxisRaw("Horizontal") < 0) {
+		if(Input.GetAxisRaw("Player 2 Horizontal") < 0) {
 			transform.localScale = new Vector3(-1, 1, 1);
 		}
 		

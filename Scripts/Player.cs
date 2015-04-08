@@ -20,6 +20,8 @@ public class Player : MonoBehaviour {
 	Controller2D controller;
 
 	Animator anim;
+	float jumpTime;
+	bool jumped;
 
 	void Start () {
 		controller = GetComponent<Controller2D>();
@@ -44,20 +46,24 @@ public class Player : MonoBehaviour {
 		}
 		
 		if(Player1) {
-			input = new Vector2 (Input.GetAxisRaw("Player 1 Horizontal"), Input.GetAxisRaw("Player 1 Vertical"));
-			
-			if(Input.GetKeyDown(KeyCode.UpArrow) && controller.collisions.below) {
-				velocity.y = jumpVelocity;
-			}
-			
+			input = new Vector2 (Input.GetAxisRaw("Player 1 Horizontal"), Input.GetAxisRaw("Player 1 Vertical"));		
 		} else {
 			input = new Vector2 (Input.GetAxisRaw("Player 2 Horizontal"), Input.GetAxisRaw("Player 2 Vertical"));
-			
-			if(Input.GetKeyDown(KeyCode.W) && controller.collisions.below) {
-				velocity.y = jumpVelocity;
-			}
 		}
-		
+
+		if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) && controller.collisions.below) {
+			velocity.y = jumpVelocity;
+			jumpTime = timeToJumpApex;
+			anim.SetTrigger("Jump");
+			jumped = true;
+		}
+
+		jumpTime -= Time.deltaTime;
+		if(jumpTime <= 0 && controller.collisions.below && jumped == true) {
+			anim.SetTrigger("Land");
+			jumped = false;
+		}
+
 		if(Input.GetAxisRaw("Horizontal") > 0) {
 			transform.localScale = new Vector3(1, 1, 1);
 		}

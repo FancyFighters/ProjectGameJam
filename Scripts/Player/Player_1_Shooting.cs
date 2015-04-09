@@ -7,20 +7,28 @@ public class Player_1_Shooting : MonoBehaviour {
 	[Range(0,100)]
 	public float speed = 20;
 	public float lifetime = 2;
+
+	public float fireRate;
+	private float nextFire;
+
 	bool changed;
 
 	void Start() {
 	}
-
-	// Update is called once per frame
-	void Update () 
+	
+	void FixedUpdate () 
 	{
-		if(Input.GetKeyDown(KeyCode.Minus) && changed == true) {
-			GameObject clone = (GameObject)Instantiate(bullet, transform.position,Quaternion.identity);
-			clone.GetComponent<Rigidbody2D>().velocity = Vector2.right * speed;
-			Destroy(clone, lifetime);
+		if(Input.GetKeyDown(KeyCode.Minus) && changed == true && Time.time > nextFire) {
+			shoot();
 		}
 	}	
+
+	void shoot() {
+		nextFire = Time.time + fireRate;
+		GameObject clone = (GameObject)Instantiate(bullet, transform.position,Quaternion.identity);
+		clone.GetComponent<Rigidbody2D>().velocity = Vector2.right * speed;
+		Destroy(clone, lifetime);
+	}
 
 	void ChangeRotation(bool change) {
 		changed = change;

@@ -21,8 +21,8 @@ public class gameLogic : MonoBehaviour {
 	void Start () 
 	{
 		nextLeftSegmentPosition = new Vector3 (0, 0, 0);
-		nextRightSegmentPosition = new Vector3 (0, 0, 0);
-		nextMiddleWallSegmentPosition = new Vector3 (0, 0, 0);
+		nextRightSegmentPosition = new Vector3 (segmentWidth + wallWidth, 0, 0);
+		nextMiddleWallSegmentPosition = new Vector3 (segmentWidth, 0, 0);
 		spawnSegments ();
 
 	}
@@ -38,13 +38,13 @@ public class gameLogic : MonoBehaviour {
 		spawnedLeftSegments.Add (currLeftSegment);
 		nextLeftSegmentPosition += new Vector3 (0, objectHeight, 0);
 		//right ------------------------------------------------------------------------------------------------------
-		GameObject currRightSegment = Instantiate (leftSegments [randRightSegment], nextRightSegmentPosition, Quaternion.identity) as GameObject;
+		GameObject currRightSegment = Instantiate (rightSegments [randRightSegment], nextRightSegmentPosition, Quaternion.identity) as GameObject;
 		spawnedRightSegments.Add (currRightSegment);
-		nextLeftSegmentPosition += new Vector3 (segmentWidth + wallWidth, objectHeight, 0);
+		nextRightSegmentPosition += new Vector3 (0, objectHeight, 0);
 		//wall -------------------------------------------------------------------------------------------------------
-		GameObject currWallSegment = Instantiate (leftSegments [randWallSegment], nextMiddleWallSegmentPosition, Quaternion.identity) as GameObject;
+		GameObject currWallSegment = Instantiate (middleWallSegments [randWallSegment], nextMiddleWallSegmentPosition, Quaternion.identity) as GameObject;
 		spawnedMiddleWallSegments.Add (currWallSegment);
-		nextLeftSegmentPosition += new Vector3 (segmentWidth, objectHeight, 0);
+		nextMiddleWallSegmentPosition += new Vector3 (0, objectHeight, 0);
 
 		Invoke ("spawnSegments", spawningTime);
 	}
@@ -55,8 +55,17 @@ public class gameLogic : MonoBehaviour {
 		{
 			Destroy(spawnedLeftSegments[0]);
 			spawnedLeftSegments.RemoveAt(0);
+
+		}
+
+		if (spawnedRightSegments.Count > 3)
+		{
 			Destroy(spawnedRightSegments[0]);
 			spawnedRightSegments.RemoveAt(0);
+		}
+
+		if (spawnedMiddleWallSegments.Count > 3)
+		{
 			Destroy(spawnedMiddleWallSegments[0]);
 			spawnedMiddleWallSegments.RemoveAt(0);
 		}

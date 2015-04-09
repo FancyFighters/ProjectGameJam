@@ -5,15 +5,16 @@ using System.Collections.Generic;
 public class gameLogic : MonoBehaviour {
 
 	public GameObject[] segments;
-	private Vector3 nextSegment;
+	private Vector3 nextSegmentPosition;
 	public List<GameObject> spawnedSegments = new List<GameObject>();
-	public float objectHeight = 5f;
+	public float objectHeight = 20f;
 
 	// Use this for initialization
 	void Start () 
 	{
+		nextSegmentPosition = new Vector3 (0, 0, 0);
 		spawnSegments ();
-		nextSegment = new Vector3 (0, 0, 0);
+
 	}
 	
 	// Update is called once per frame
@@ -21,11 +22,11 @@ public class gameLogic : MonoBehaviour {
 	{
 		int randSegment = Random.Range (0, segments.Length-1);
 		//Debug.Log (segments[0]);
-		GameObject currSegment = Instantiate (segments [randSegment], nextSegment, Quaternion.identity) as GameObject;
+		GameObject currSegment = Instantiate (segments [randSegment], nextSegmentPosition, Quaternion.identity) as GameObject;
+		print ("rdh" + currSegment.transform.position);
 		spawnedSegments.Add (currSegment);
 
-		nextSegment += new Vector3 (0, objectHeight, 0);
-		print (nextSegment);
+		nextSegmentPosition += new Vector3 (0, objectHeight, 0);
 		Invoke ("spawnSegments", 2f);
 
 	}
@@ -34,9 +35,10 @@ public class gameLogic : MonoBehaviour {
 	{
 		if (spawnedSegments.Count > 3)
 		{
-			//print (spawnedSegments[0]);
 			Destroy(spawnedSegments[0]);
 			spawnedSegments.RemoveAt(0);
 		}
 	}
+
+
 }

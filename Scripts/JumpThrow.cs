@@ -21,16 +21,26 @@ public class JumpThrow : MonoBehaviour {
 	
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		oneWay = true;
+		if (other.gameObject.tag != "Axt") 
+		{
+			oneWay = true;
+		}
 	}
 	
 	void OnTriggerStay2D(Collider2D other)
 	{
-		oneWay = true;
+		if (other.gameObject.tag != "Axt") 
+		{
+			oneWay = true;
+		}
 	}
 	
 	void OnTriggerExit2D(Collider2D other)
 	{
-		oneWay = false;
+		if (other.gameObject.tag != "Axt") 
+		{
+			oneWay = false;
+		}
+
 	}
 }

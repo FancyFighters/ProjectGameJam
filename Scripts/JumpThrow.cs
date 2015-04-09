@@ -3,24 +3,30 @@ using System.Collections;
 
 public class JumpThrow : MonoBehaviour {
 
-	
+	public PolygonCollider2D platform;
+	public bool oneWay = false;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-	
-	void OnCollisionEnter2D(Collision2D coll)
+	void Update () 
 	{
-		if (coll.gameObject.tag == "Collider")
-		{
-			
-		}
+		//platform.enabled = !oneWay; 
+		if (oneWay)
+			platform.enabled=false;
+		if (!oneWay)
+			platform.enabled=true;   
 	}
 	
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		oneWay = true;
+	}
+	
+	void OnTriggerStay2D(Collider2D other)
+	{
+		oneWay = true;
+	}
+	
+	void OnTriggerExit2D(Collider2D other)
+	{
+		oneWay = false;
+	}
 }

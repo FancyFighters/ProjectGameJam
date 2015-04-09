@@ -11,7 +11,7 @@ public class Player_1_Shooting : MonoBehaviour {
 	{
 		if(Input.GetKeyDown(KeyCode.Minus))
 		{
-			Instantiate(bullte, player.transform.position,Quaternion.identity);
+			GameObject clone = Instantiate(bullte, player.transform.position,Quaternion.identity) as GameObject;
 		}
 	
 	}	

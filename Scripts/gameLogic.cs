@@ -40,11 +40,11 @@ public class gameLogic : MonoBehaviour {
 		//right ------------------------------------------------------------------------------------------------------
 		GameObject currRightSegment = Instantiate (leftSegments [randRightSegment], nextRightSegmentPosition, Quaternion.identity) as GameObject;
 		spawnedRightSegments.Add (currRightSegment);
-		nextLeftSegmentPosition += new Vector3 (segmentWidth, objectHeight, 0);
+		nextLeftSegmentPosition += new Vector3 (segmentWidth + wallWidth, objectHeight, 0);
 		//wall -------------------------------------------------------------------------------------------------------
 		GameObject currWallSegment = Instantiate (leftSegments [randWallSegment], nextMiddleWallSegmentPosition, Quaternion.identity) as GameObject;
 		spawnedMiddleWallSegments.Add (currWallSegment);
-		nextLeftSegmentPosition += new Vector3 (wallWidth, objectHeight, 0);
+		nextLeftSegmentPosition += new Vector3 (segmentWidth, objectHeight, 0);
 
 		Invoke ("spawnSegments", spawningTime);
 	}
@@ -55,6 +55,10 @@ public class gameLogic : MonoBehaviour {
 		{
 			Destroy(spawnedLeftSegments[0]);
 			spawnedLeftSegments.RemoveAt(0);
+			Destroy(spawnedRightSegments[0]);
+			spawnedRightSegments.RemoveAt(0);
+			Destroy(spawnedMiddleWallSegments[0]);
+			spawnedMiddleWallSegments.RemoveAt(0);
 		}
 	}
 }

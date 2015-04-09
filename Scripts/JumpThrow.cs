@@ -9,10 +9,14 @@ public class JumpThrow : MonoBehaviour {
 	void Update () 
 	{
 		//platform.enabled = !oneWay; 
-		if (oneWay)
-			platform.enabled=false;
-		if (!oneWay)
-			platform.enabled=true;   
+		if (oneWay) 
+		{
+			platform.enabled = false;
+		}
+		if (!oneWay) 
+		{
+			platform.enabled = true;   
+		}
 	}
 	
 	void OnTriggerEnter2D(Collider2D other)

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 public class gameLogic : MonoBehaviour {
 
@@ -26,11 +27,9 @@ public class gameLogic : MonoBehaviour {
 		nextSegment += new Vector3 (0, objectHeight, 0);
 		print (nextSegment);
 		Invoke ("spawnSegments", 0.5f);
-
 	}
 
 	void destroySegments ()
 	{
-
 	}
 }

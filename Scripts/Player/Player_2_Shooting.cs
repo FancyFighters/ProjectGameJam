@@ -10,7 +10,7 @@ public class Player_2_Shooting : MonoBehaviour {
 	
 	public float fireRate;
 	private float nextFire;
-	
+
 	bool changed;
 	
 	void Start() {

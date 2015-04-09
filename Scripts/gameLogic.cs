@@ -26,7 +26,6 @@ public class gameLogic : MonoBehaviour {
 		nextRightSegmentPosition = new Vector3 (segmentWidth + wallWidth, 0, 0);
 		nextMiddleWallSegmentPosition = new Vector3 ((segmentWidth / 2)+ (wallWidth / 2), 0, 0);
 		spawnSegments ();
-		spawnSegments ();
 
 
 

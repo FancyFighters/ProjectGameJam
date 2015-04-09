@@ -72,4 +72,10 @@ public class Player_1 : MonoBehaviour {
 		velocity.y += gravity * Time.deltaTime;
 		controller.Move(velocity * Time.deltaTime);
 	}
+
+	void OnTriggerEnter2D(Collider2D other) {
+		if(other.CompareTag("Bullet_2")|| other.CompareTag("Axt")) {
+			Application.LoadLevel(5);
+		}
+	}
 }

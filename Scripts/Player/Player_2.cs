@@ -58,12 +58,14 @@ public class Player_2 : MonoBehaviour {
 
 		if(Input.GetAxisRaw("Player 2 Horizontal") > 0) {
 			transform.localScale = new Vector3(1, 1, 1);
+			GameObject.Find("shooter_2").SendMessage("ChangeRotation", false);
 		}
 		
 		if(Input.GetAxisRaw("Player 2 Horizontal") < 0) {
 			transform.localScale = new Vector3(-1, 1, 1);
+			GameObject.Find("shooter_2").SendMessage("ChangeRotation", true);
 		}
-		
+
 		
 		float targetVelocityX = input.x * moveSpeed;
 		velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below)?accelerationTimeGrounded:accelerationTimeAirborne);

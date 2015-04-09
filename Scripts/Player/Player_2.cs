@@ -74,7 +74,7 @@ public class Player_2 : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
-		if(other.CompareTag("Bullet_1") || other.CompareTag("Axt")) {
+		if(other.CompareTag("Bullet 1") || other.CompareTag("Axt")) {
 			Application.LoadLevel(4);
 		}
 	}

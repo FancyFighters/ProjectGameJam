@@ -13,7 +13,7 @@ public class MovingCamera : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		transform.localPosition += new Vector3(0,0.1f,0);
+		transform.localPosition += new Vector3(0,0.02f,0);
 	}
 
 	IEnumerator Move() {

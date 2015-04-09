@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class gameLogic : MonoBehaviour {
 
 	public Transform[] segments;
 	private Vector3 nextSegment;
+	public List<Transform> spawnedSegments = new List<Transform>();
 	public float objectHeight = 5f;
 
 	// Use this for initialization
@@ -17,11 +19,18 @@ public class gameLogic : MonoBehaviour {
 	// Update is called once per frame
 	void spawnSegments () 
 	{
+		int randSegment = Random.Range (0, segments.Length);
+		Transform currSegment = Instantiate (segments [randSegment], nextSegment, Quaternion.identity) as Transform;
+		spawnedSegments.Add (currSegment);
 
-		Instantiate (segments [Random.Range (0, segments.Length)], nextSegment, Quaternion.identity);
 		nextSegment += new Vector3 (0, objectHeight, 0);
 		print (nextSegment);
 		Invoke ("spawnSegments", 0.5f);
+
+	}
+
+	void destroySegments ()
+	{
 
 	}
 }

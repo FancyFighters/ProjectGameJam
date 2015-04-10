@@ -1,0 +1,275 @@
+fileFormatVersion: 2
+guid: ce0db69f794c84e4aab71af9d144915c
+timeCreated: 1428661565
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: pinkfrogmovement_final_0
+    21300002: pinkfrogmovement_final_1
+    21300004: pinkfrogmovement_final_2
+    21300006: pinkfrogmovement_final_3
+    21300008: pinkfrogmovement_final_4
+    21300010: pinkfrogmovement_final_5
+    21300012: pinkfrogmovement_final_6
+    21300014: pinkfrogmovement_final_7
+    21300016: pinkfrogmovement_final_8
+    21300018: pinkfrogmovement_final_9
+    21300020: pinkfrogmovement_final_10
+    21300022: pinkfrogmovement_final_11
+    21300024: pinkfrogmovement_final_12
+    21300026: pinkfrogmovement_final_13
+    21300028: pinkfrogmovement_final_14
+    21300030: pinkfrogmovement_final_15
+    21300032: pinkfrogmovement_final_16
+    21300034: pinkfrogmovement_final_17
+    21300036: pinkfrogmovement_final_18
+    21300038: pinkfrogmovement_final_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: pinkfrogmovement_final_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 478
+        width: 131
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pinkfrogmovement_final_1
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 477
+        width: 137
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pinkfrogmovement_final_2
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 478
+        width: 145
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pinkfrogmovement_final_3
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 477
+        width: 152
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pinkfrogmovement_final_4
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 477
+        width: 159
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pinkfrogmovement_final_5
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 319
+        width: 164
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pinkfrogmovement_final_6
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 319
+        width: 170
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pinkfrogmovement_final_7
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 319
+        width: 175
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pinkfrogmovement_final_8
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 319
+        width: 177
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pinkfrogmovement_final_9
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 319
+        width: 175
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pinkfrogmovement_final_10
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 161
+        width: 172
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pinkfrogmovement_final_11
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 161
+        width: 169
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pinkfrogmovement_final_12
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 161
+        width: 166
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pinkfrogmovement_final_13
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 161
+        width: 162
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pinkfrogmovement_final_14
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 162
+        width: 158
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pinkfrogmovement_final_15
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 4
+        width: 154
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pinkfrogmovement_final_16
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 4
+        width: 149
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pinkfrogmovement_final_17
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 4
+        width: 144
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pinkfrogmovement_final_18
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 4
+        width: 140
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pinkfrogmovement_final_19
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 4
+        width: 134
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

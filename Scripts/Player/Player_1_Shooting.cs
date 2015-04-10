@@ -26,7 +26,7 @@ public class Player_1_Shooting : MonoBehaviour {
 	void shoot() {
 		nextFire = Time.time + fireRate;
 		GameObject clone = (GameObject)Instantiate(bullet, transform.position,Quaternion.identity);
-		clone.GetComponent<Rigidbody2D>().velocity = Vector2.right * speed;
+		clone.GetComponent<Rigidbody2D>().velocity = (Vector2.right * -1) * speed;
 		Destroy(clone, lifetime);
 	}
 

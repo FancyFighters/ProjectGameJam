@@ -1,9 +1,29 @@
 fileFormatVersion: 2
 guid: b0eeb73efa60ae64cbd518e40d75e5f6
-timeCreated: 1428652511
+timeCreated: 1428656254
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: greenfrogmovement_0
+    21300002: greenfrogmovement_1
+    21300004: greenfrogmovement_2
+    21300006: greenfrogmovement_3
+    21300008: greenfrogmovement_4
+    21300010: greenfrogmovement_5
+    21300012: greenfrogmovement_6
+    21300014: greenfrogmovement_7
+    21300016: greenfrogmovement_8
+    21300018: greenfrogmovement_9
+    21300020: greenfrogmovement_10
+    21300022: greenfrogmovement_11
+    21300024: greenfrogmovement_12
+    21300026: greenfrogmovement_13
+    21300028: greenfrogmovement_14
+    21300030: greenfrogmovement_15
+    21300032: greenfrogmovement_16
+    21300034: greenfrogmovement_17
+    21300036: greenfrogmovement_18
+    21300038: greenfrogmovement_19
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,25 +50,225 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 72
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: greenfrogmovement_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 586
+        width: 157
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: greenfrogmovement_1
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 584
+        width: 163
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: greenfrogmovement_2
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 584
+        width: 169
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: greenfrogmovement_3
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 585
+        width: 177
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: greenfrogmovement_4
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 586
+        width: 184
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: greenfrogmovement_5
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 393
+        width: 191
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: greenfrogmovement_6
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 393
+        width: 195
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: greenfrogmovement_7
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 393
+        width: 200
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: greenfrogmovement_8
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 393
+        width: 201
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: greenfrogmovement_9
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 393
+        width: 200
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: greenfrogmovement_10
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 200
+        width: 197
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: greenfrogmovement_11
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 200
+        width: 195
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: greenfrogmovement_12
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 200
+        width: 192
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: greenfrogmovement_13
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 200
+        width: 187
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: greenfrogmovement_14
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 201
+        width: 176
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: greenfrogmovement_15
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 7
+        width: 180
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: greenfrogmovement_16
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 6
+        width: 167
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: greenfrogmovement_17
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 6
+        width: 168
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: greenfrogmovement_18
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 6
+        width: 160
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: greenfrogmovement_19
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 7
+        width: 159
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

@@ -58,12 +58,12 @@ public class Player_2 : MonoBehaviour {
 
 		if(Input.GetAxisRaw("Player 2 Horizontal") > 0) {
 			transform.localScale = new Vector3(1, 1, 1);
-			GameObject.Find("shooter_2").SendMessage("ChangeRotation", false);
+			GameObject.Find("shooter_2").SendMessage("ChangeRotation", true);
 		}
 		
 		if(Input.GetAxisRaw("Player 2 Horizontal") < 0) {
 			transform.localScale = new Vector3(-1, 1, 1);
-			GameObject.Find("shooter_2").SendMessage("ChangeRotation", true);
+			GameObject.Find("shooter_2").SendMessage("ChangeRotation", false);
 		}
 
 		

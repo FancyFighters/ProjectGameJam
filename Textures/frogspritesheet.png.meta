@@ -1,9 +1,29 @@
 fileFormatVersion: 2
 guid: 5df4a5537ca045749aa57ca45a674f5f
-timeCreated: 1428652483
+timeCreated: 1428656240
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: frogspritesheet_0
+    21300002: frogspritesheet_1
+    21300004: frogspritesheet_2
+    21300006: frogspritesheet_3
+    21300008: frogspritesheet_4
+    21300010: frogspritesheet_5
+    21300012: frogspritesheet_6
+    21300014: frogspritesheet_7
+    21300016: frogspritesheet_8
+    21300018: frogspritesheet_9
+    21300020: frogspritesheet_10
+    21300022: frogspritesheet_11
+    21300024: frogspritesheet_12
+    21300026: frogspritesheet_13
+    21300028: frogspritesheet_14
+    21300030: frogspritesheet_15
+    21300032: frogspritesheet_16
+    21300034: frogspritesheet_17
+    21300036: frogspritesheet_18
+    21300038: frogspritesheet_19
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,14 +50,14 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +68,207 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: frogspritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 899
+        width: 157
+        height: 148
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: frogspritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 903
+        width: 181
+        height: 181
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: frogspritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 906
+        width: 176
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: frogspritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 912
+        width: 141
+        height: 244
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: frogspritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 929
+        width: 99
+        height: 266
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: frogspritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 631
+        width: 98
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: frogspritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 626
+        width: 114
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: frogspritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 621
+        width: 126
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: frogspritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 617
+        width: 138
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: frogspritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 615
+        width: 151
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: frogspritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 313
+        width: 160
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: frogspritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 311
+        width: 168
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: frogspritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 310
+        width: 176
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: frogspritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 308
+        width: 185
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: frogspritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 308
+        width: 186
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: frogspritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 8
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: frogspritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 8
+        width: 182
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: frogspritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 7
+        width: 178
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: frogspritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 6
+        width: 174
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: frogspritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 4
+        width: 166
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
